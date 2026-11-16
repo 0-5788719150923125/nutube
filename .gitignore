@@ -1,0 +1,36 @@
+# CLAUDE.md is the agents' map of this project and stays out of the repository,
+# as in the sibling projects - ignored here too, not only by a global rule.
+/CLAUDE.md
+
+# Gradle and Kotlin build state
+.gradle/
+.kotlin/
+build/
+
+# Machine-specific SDK path - written once per machine (see the README)
+local.properties
+
+# Built artifacts. run.sh copies the debug build to /nutube.apk so file-sync
+# tools that skip build/ directories can still carry it to a phone.
+*.apk
+*.aab
+*.apks
+output-metadata.json
+
+# Signing material never belongs in the repository
+*.jks
+*.keystore
+keystore.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS and editor junk
+.DS_Store
+Thumbs.db
+*.swp
